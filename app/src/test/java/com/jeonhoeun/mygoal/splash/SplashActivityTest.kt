@@ -2,16 +2,18 @@ package com.jeonhoeun.mygoal.splash
 
 import android.content.Intent
 import android.widget.Button
-import com.jeonhoeun.mygoal.HomeActivity
 import com.jeonhoeun.mygoal.R
+import com.jeonhoeun.mygoal.home.HomeActivity
 import junit.framework.Assert.assertEquals
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.Robolectric
 import org.robolectric.RobolectricTestRunner
 import org.robolectric.Shadows
+import org.robolectric.annotation.Config
 import org.robolectric.shadows.ShadowIntent
 
+@Config( sdk = [30])
 @RunWith(RobolectricTestRunner::class)
 class SplashActivityTest{
 
