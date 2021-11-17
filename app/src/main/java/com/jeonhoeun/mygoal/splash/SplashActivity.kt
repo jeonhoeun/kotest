@@ -4,7 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import com.jeonhoeun.mygoal.HomeActivity
+import com.jeonhoeun.mygoal.home.HomeActivity
 import com.jeonhoeun.mygoal.R
 
 class SplashActivity : AppCompatActivity() {
@@ -14,7 +14,7 @@ class SplashActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.button_move_to_home).setOnClickListener {
             finish()
-            startActivity(Intent(this,HomeActivity::class.java))
+            startActivity(Intent(this, HomeActivity::class.java))
         }
     }
 }
